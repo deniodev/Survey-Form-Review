@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">Survey-Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form action="" id="survey-form">
+
+      <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" required placeholder="Age">
+
+
+  
+      <br>
+      <h3>Current Role</h3>
+      <label for="Roles">Choose your Role:</label>
+       <select name="role" id="dropdown">
+        <option value="admin"> Admin</option>
+        <option value="user"> User</option>
+        <option value="staff"> Staff</option>
+        </select>
+
+        <br>
+        <h3>Would you recommend this program for others?</h3>
+       
+        <label id="recommendation"><b>Would you recommend:</b></label><br>
+            <input type="radio" class="radio-inline" name="recommend" value="maybe" checked> Maybe<br>
+            <input type="radio" class="radio-inline" name="recommend" value="notsure"> Notsure<br>
+            <input type="radio" class="radio-inline" name="recommend" value="definetly"> Definetly <br>
+
+          
+        
+        <br>
+        <h3>What would you like to see improved?</h3>
+        <input type="checkbox" id="front" value="Frontend-project"> <label for="front">Frontend-project</label><br>
+        <input type="checkbox" id="back" value="Backend-Project"><label for="back">Backend-Project</label><br>
+        <input type="checkbox" id="fullstack" value="Fullstack"><label for="fullstack">Fullstack</label><br>
+
+        <br>
+        <h3>Additional Comments</h3>
+        <textarea type="text" rows="5" cols="50" placeholder="Input your comments here!!"></textarea>
+
+        <br>
+        <button type="submit" id="submit">Submit</button>
+        
+
+    </form>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
